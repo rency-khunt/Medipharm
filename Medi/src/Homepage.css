@@ -1,0 +1,877 @@
+:root {
+    --text-color: #30363c;
+    --main-color: rgb(7, 161, 161);
+    --shadow: rgba(60, 64, 67, 0.3)0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15)0px 2px 6px 2px;
+    --shodow-border: rgba(0, 0, 0, 0.2)0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15)0px 0px 0px 1px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+    color: var(--text-color);
+}
+
+
+/*---global css---*/
+
+.container2>.title {
+    font-weight: 600;
+    font-size: 26px;
+    align-items: center;
+    display: flex;
+    text-transform: capitalize;
+}
+
+.container2>.subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 8px 0 24px;
+    align-items: center;
+}
+
+.container2>.subtitle>img {
+    height: 18px;
+}
+
+
+/*--product cards---*/
+
+.trending .product-cards {
+    display: flex;
+    overflow-x: auto;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.product-card img {
+    height: auto;
+    width: 100%;
+    aspect-ratio: 0.9;
+    object-fit: contain;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: var(--shodow-border);
+    margin-bottom: 10px;
+}
+
+.product-card .product-name {
+    padding: 10px;
+}
+
+.product-card .product-price {
+    padding: 0 10px 10px;
+}
+
+.product-card .product-price p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.product-card .product-price span {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+/*--product cards---*/
+
+.new-launches .product-cards {
+    display: flex;
+    overflow-x: auto;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.product-card img {
+    height: auto;
+    width: 100%;
+    aspect-ratio: 0.9;
+    object-fit: contain;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: var(--shodow-border);
+    margin-bottom: 10px;
+}
+
+.product-card .product-name {
+    padding: 10px;
+}
+
+.product-card .product-price {
+    padding: 0 10px 10px;
+}
+
+.product-card .product-price p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.product-card .product-price span {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+
+/*------------navbar------------*/
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+}
+
+.nav {
+    box-shadow: lightgray 0 0 5px;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.nav>img {
+    margin: 7px 35px;
+    height: 40px;
+
+}
+
+.nav>img+div {
+    width: 1px;
+    background-color: gray;
+    height: 30px;
+    margin: auto 0;
+}
+
+#pick-address {
+    margin: auto 30px;
+}
+
+#pick-address>div {
+    display: flex;
+}
+
+#pick-address>div p {
+    font-size: 13px;
+}
+
+#pick-addresss>h4 {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    display: inline;
+}
+
+#pick-address>i {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.download-app {
+    cursor: pointer;
+    display: flex;
+    margin: auto 20px auto auto;
+    padding: 10px 15px;
+    align-items: center;
+    border-radius: 8px;
+    background-color: rgb(226, 247, 255);
+}
+
+.download-app :hover {
+    background-color: rgb(200, 240, 255);
+}
+
+.download-app>p {
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.nav>ul {
+    margin: auto 20px;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav>ul li,
+.nav>ul li a {
+    margin: 10px 15px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav ul li p {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+/* Add your CSS styles for the search bar layout here */
+
+
+/*-------search bar-----*/
+
+.search-layout {
+    margin-top: 50px;
+
+}
+
+.search-layout>div {
+    width: 70%;
+    margin: 30px auto 0;
+}
+
+.search-header {
+    display: flex;
+    align-items: center;
+}
+
+.search-header>h2 {
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+.search-header>h2+i {
+    margin-left: auto;
+    margin-right: 8px;
+
+}
+
+.search-header>p {
+    margin-right: 10px;
+}
+
+.search-header>div {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-header>div>h3,
+.search-header>div>i {
+    color: var(--maim-color);
+    margin-right: 50px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.search-bar {
+    display: flex;
+    margin: 20px 0;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px lightgray solid;
+    border-radius: 40px;
+    padding: 4px;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: lightgray 0 0 4px;
+}
+
+.search-bar>i {
+    margin-left: 30px;
+}
+
+.search-bar>input[type="text"] {
+    margin: auto 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+
+}
+
+.search-bar>input[type="submit"] {
+    margin-left: auto;
+    border: none;
+    background-color: red;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.search-bar input::placeholder {
+    font-size: 14px;
+}
+
+/*--nav-card layout--*/
+.nav-card-layout {
+    display: flex;
+    /* grid-area: 40px; */
+    text-align: center;
+    /* overflow: auto; */
+    padding: 2px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.nav-card-layout>div::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-card-layout>div div {
+    padding: 8px 15px;
+    border-radius: 10ppx;
+    cursor: pointer;
+}
+
+/*--nav-card-layout--*/
+.nav-card-layout>div {
+    display: flex;
+    grid-area: 40px;
+    text-align: center;
+    overflow: auto;
+    padding: 2px;
+}
+
+.nav-card-layout>div::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-card-layout>div div {
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nav-card-layout>div div:hover {
+    box-shadow: lightgray 0 0 6px;
+}
+
+.nav-card-layout>div img {
+    width: 90px;
+}
+
+/*---banner--*/
+
+
+.banner::-webkit-scrollbar {
+    display: none;
+}
+
+.banner {
+    display: flex;
+    overflow: auto;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.banner img {
+    width: 100%;
+    margin-right: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*----- new user offer----*/
+.new-user-offer>h1 {
+    margin-bottom: 24px;
+}
+
+.cards-layout {
+    display: flex;
+    cursor: pointer;
+}
+
+.cards-layout>div {
+    width: 330px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    display: flex;
+    padding: 10px;
+    margin-right: 30px;
+    border-radius: 7px;
+    align-items: center;
+}
+
+.cards-layout>div>img {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+}
+
+.cards-layout>div>p {
+    margin: 0 10px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.cards-layout>div:last-child {
+    background: linear-gradient(to right, rgb (235, 250, 250) rgb (176, 255, 255) rgb(178, 255, 255));
+    display: block;
+    text-align: center;
+}
+
+.cards-layout>div:last-child i,
+.cards-layout>div:last-child p {
+    color: var(--main-color);
+    font-size: 15px;
+}
+
+.cards-layout>div:hover {
+    box-shadow: var(--shadow);
+}
+
+/*-- shop categaries--*/
+
+.shop-categories>.title {
+    margin-bottom: 40px;
+}
+
+.shop-categories>div {
+    display: flex;
+    text-align: center;
+    gap: 25px;
+}
+
+.shop-categories>div>div {
+    cursor: pointer;
+}
+
+.shop-categories img {
+    width: 100%;
+    border-radius: 10px 0;
+    box-shadow: var(--shodow-border);
+}
+
+.shop-categories img:hover {
+    box-shadow: var(--shadow);
+}
+
+.shop-categories h4 {
+    font-weight: 500;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+
+.product-container {
+    display: flex;
+    /* Display children in a row */
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    white-space: nowrap;
+    /* Prevent items from wrapping to new lines */
+}
+
+.product-container>div {
+    flex: 0 0 auto;
+    padding: 10px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.product-container>div:last-child {
+    margin-right: 0;
+
+}
+
+/*--Order-with-prescription --*/
+
+.Order-with-prescription {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: var(--shodow-border);
+}
+
+.Order-with-prescription {
+    font-size: 20px;
+}
+
+.Order-with-prescription {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Order-with-prescription>div:first-child {
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+    background-color: rgb(221, 241, 255);
+}
+
+.Order-with-prescription>div:first-child img {
+    padding: 10px 15px;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: var(--main-color);
+}
+
+.Order-with-prescription>div:first-child button i {
+    margin-right: 5px;
+    color: white;
+    font-size: 10px;
+}
+
+.Order-with-prescription>div:last-child {
+    padding: 30px 20px 30px 40px;
+}
+
+.Order-with-prescription>div:last-child>h4 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.Order-with-prescription>div:last-child>div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.Order-with-prescription>div:last-child>div>div {
+    display: flex;
+    align-items: flex-start;
+}
+
+.Order-with-prescription>div:last-child>div>div>h3 {
+    padding: 5px 10px;
+    background-color: rgb(235, 242, 255);
+    border-radius: 5px;
+    color: blue;
+    margin-top: 10px;
+}
+
+/*--Ayurveda-card-layout--*/
+
+/* Style the Ayurveda card layout container */
+.Ayurveda-card-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Responsive grid layout */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Style each card */
+.Ayurveda-card-layout div {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Ayurveda-card-layout img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px 8px 0 0;
+    /* Rounded corners for the top */
+}
+
+.Ayurveda-card-layout h3 {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Style the Featured brands card layout container */
+.Featured.brands-card-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Responsive grid layout */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Style the title */
+.Featured.brands-card-layout .title {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style each card */
+.Featured.brands-card-layout div {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Featured.brands-card-layout img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px 8px 0 0;
+    /* Rounded corners for the top */
+}
+
+.Featured.brands-card-layout h3 {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+
+
+/* Style the container */
+.Ayurveda.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the title */
+.Ayurveda.container .title {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the subtitle */
+.Ayurveda.container .subtitle {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Style each brand item */
+.Ayurveda.container div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Ayurveda.container img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    display: flex;
+}
+
+.Ayurveda.container h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+/* Hover effect for brand items */
+.Ayurveda.container div:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+
+
+/* Style the container */
+.Ayurveda.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the title */
+.Ayurveda.container .title {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the subtitle */
+.Ayurveda.container .subtitle {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Style each brand item */
+.Ayurveda.container div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Ayurveda.container img {
+    width: 50px;
+    /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+.Ayurveda.container h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+/* Hover effect for brand items */
+.Ayurveda.container div:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+
+
+/* Style the Ayurveda card layout container */
+.Ayurveda-card-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Responsive grid layout */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Style each card */
+.Ayurveda-card-layout div {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Ayurveda-card-layout img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px 8px 0 0;
+    /* Rounded corners for the top */
+}
+
+.Ayurveda-card-layout h3 {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Style the Featured brands card layout container */
+.Featured.brands-card-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Responsive grid layout */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Style the title */
+.Featured.brands-card-layout .title {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style each card */
+.Featured.brands-card-layout div {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Featured.brands-card-layout img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px 8px 0 0;
+    /* Rounded corners for the top */
+}
+
+.Featured.brands-card-layout h3 {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Container for the card */
+.card {
+    width: 100%;
+    margin: 20px auto;
+    border: none;
+}
+
+/* Center align text and elements inside the card */
+.card-body {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+/* Style for the logo image */
+.card-body img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+
+}
+
+/* Define styles for the columns */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+    flex: 0 0 calc(16.6666% - 20px);
+    margin: 10px;
+}
+
+/* Style for heading elements */
+.column h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #f8f9fa;
+}
+
+.column h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #f8f9fa;
+}
+
+/* Style for the footer */
+.card-footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    padding: 10px;
+    text-align: center;
+}
